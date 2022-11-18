@@ -11,6 +11,8 @@ This Challenge is divided into three parts: data modeling, data engineering, and
 ### Data Modeling
 Inspect the CSV files, and then sketch an ERD of the tables.
 
+![ERD](https://user-images.githubusercontent.com/112406455/202729837-14281cf0-2b34-4a08-b7cf-37a2213a36c3.png)
+
 ### Data Engineering
 1. Use the provided information to create a table schema for each of the six CSV files. Be sure to do the following:
 
