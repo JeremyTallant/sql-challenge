@@ -21,8 +21,37 @@ Inspect the CSV files, and then sketch an ERD of the tables.
       * For the primary keys, verify that the column is unique. Otherwise, create a composite key, which takes two primary keys to uniquely identify a row.
 
       * Be sure to create the tables in the correct order to handle the foreign keys.
+      
+<img width="1440" alt="Screenshot 2022-11-19 at 9 46 24 AM" src="https://user-images.githubusercontent.com/112406455/202859271-ad35303d-fa49-45e2-b689-ceb6243e4f12.png">
+      
+<img width="1440" alt="Screenshot 2022-11-19 at 9 46 33 AM" src="https://user-images.githubusercontent.com/112406455/202859278-6a751d1e-b45f-47cf-9bf2-12c32f197c66.png">
+
 
 2. Import each CSV file into its corresponding SQL table.
+
+Titles:
+
+<img width="1440" alt="Screenshot 2022-11-19 at 9 49 53 AM" src="https://user-images.githubusercontent.com/112406455/202859430-98aa0334-1f3e-48f2-8d57-4b85a7f305a3.png">
+
+Employees:
+
+<img width="1440" alt="Screenshot 2022-11-19 at 9 52 26 AM" src="https://user-images.githubusercontent.com/112406455/202859634-52a6da13-271a-4e71-aad3-b0a071e089ec.png">
+
+Dept_emp:
+
+<img width="1440" alt="Screenshot 2022-11-19 at 9 53 26 AM" src="https://user-images.githubusercontent.com/112406455/202859719-a33fac8e-80b9-4672-97e4-bf94fb79b9ed.png">
+
+Salaries:
+
+<img width="1440" alt="Screenshot 2022-11-19 at 9 53 39 AM" src="https://user-images.githubusercontent.com/112406455/202859758-ebac1a10-2ac0-405f-a21e-2d50b252edd3.png">
+
+Dept_manager:
+
+<img width="1440" alt="Screenshot 2022-11-19 at 10 00 29 AM" src="https://user-images.githubusercontent.com/112406455/202860001-003c2883-abd2-4109-958d-06fa24b83d47.png">
+
+Departments:
+
+<img width="1440" alt="Screenshot 2022-11-19 at 9 54 08 AM" src="https://user-images.githubusercontent.com/112406455/202859859-f40c27ad-1ca5-4d96-8e38-4ed9f7fc4a44.png">
 
 ### Data Analysis
 
