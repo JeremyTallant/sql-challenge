@@ -22,9 +22,9 @@ Inspect the CSV files, and then sketch an ERD of the tables.
 
       * Be sure to create the tables in the correct order to handle the foreign keys.
       
-<img width="1440" alt="Screenshot 2022-11-19 at 9 46 24 AM" src="https://user-images.githubusercontent.com/112406455/202859271-ad35303d-fa49-45e2-b689-ceb6243e4f12.png">
-      
-<img width="1440" alt="Screenshot 2022-11-19 at 9 46 33 AM" src="https://user-images.githubusercontent.com/112406455/202859278-6a751d1e-b45f-47cf-9bf2-12c32f197c66.png">
+<img width="1440" alt="Screenshot 2022-11-20 at 8 43 27 AM" src="https://user-images.githubusercontent.com/112406455/202908627-70ed967a-f1af-4a78-9664-54bf7cee7e4e.png">
+
+ <img width="1440" alt="Screenshot 2022-11-19 at 9 46 33 AM" src="https://user-images.githubusercontent.com/112406455/202859278-6a751d1e-b45f-47cf-9bf2-12c32f197c66.png">
 
 
 2. Import each CSV file into its corresponding SQL table.
