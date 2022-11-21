@@ -57,19 +57,35 @@ Departments:
 
 1. List the employee number, last name, first name, sex, and salary of each employee.
 
+<img width="1440" alt="Screenshot 2022-11-21 at 10 45 34 AM" src="https://user-images.githubusercontent.com/112406455/203112191-d2194c10-6615-4f22-b07f-cf245c8bd3f5.png">
+
 2. List the first name, last name, and hire date for the employees who were hired in 1986.
+
+<img width="1440" alt="Screenshot 2022-11-21 at 10 47 05 AM" src="https://user-images.githubusercontent.com/112406455/203112405-248bf3c2-3597-4296-90d3-ec1fa0f0740a.png">
 
 3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
 
+<img width="1440" alt="Screenshot 2022-11-21 at 10 48 14 AM" src="https://user-images.githubusercontent.com/112406455/203112645-75193ae8-aee5-4138-baae-aea51451e7b0.png">
+
 4. List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+
+<img width="1440" alt="Screenshot 2022-11-21 at 10 49 16 AM" src="https://user-images.githubusercontent.com/112406455/203112826-cd7acf5f-a495-46c4-9889-47d5e604a7bf.png">
 
 5. List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
 
+<img width="1440" alt="Screenshot 2022-11-21 at 10 50 00 AM" src="https://user-images.githubusercontent.com/112406455/203112989-1ace7045-1fda-4bf6-a2c2-51c45ff9b168.png">
+
 6. List each employee in the Sales department, including their employee number, last name, and first name.
+
+<img width="1440" alt="Screenshot 2022-11-21 at 10 50 48 AM" src="https://user-images.githubusercontent.com/112406455/203113142-cae704b4-b48f-4d3d-bf33-dca918c10790.png">
 
 7. List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
+<img width="1440" alt="Screenshot 2022-11-21 at 10 51 36 AM" src="https://user-images.githubusercontent.com/112406455/203113342-f15838aa-be77-4ecb-bc61-48c7605ae691.png">
+
 8. List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+
+<img width="1440" alt="Screenshot 2022-11-21 at 10 53 08 AM" src="https://user-images.githubusercontent.com/112406455/203113672-548923d7-3aa9-4df3-9819-0cc471966f3d.png">
 
 ### Bonus
 
