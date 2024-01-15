@@ -49,4 +49,5 @@ Each entity was designed to encapsulate specific aspects of our data:
 * `Title`: Stores the various titles or positions that employees can hold within the organization, with a unique title identifier (`title_id`).
 * `Salary`: Records the salary details for each employee, linked via the employee number.
 
-The relationships between these entities were then defined using foreign keys to establish the connections necessary for our relational database structure. For instance, emp_no serves as a foreign key in multiple tables, linking employees to their salary, department, and managerial roles.
+Primary keys are carefully selected to uniquely identify the records within each dataset, such as `emp_no` for the Employees table. The relationships between these entities were then defined using foreign keys to establish the connections necessary for our relational database structure. For instance, emp_no serves as a foreign key in multiple tables, linking employees to their salary, department, and managerial roles. This diagram ultimately acts as a blueprint for the subsequent Data Engineering phase, directing the creation of SQL tables and establishing their interrelations.
+
