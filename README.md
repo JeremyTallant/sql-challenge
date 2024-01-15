@@ -138,4 +138,16 @@ CREATE TABLE dept_emp (
     CONSTRAINT fk_dept_emp_departments FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
 );
 ```
-This table, `dept_emp`, establishes the relationship between employees and departments. It uses a composite primary key (`emp_no`, `dept_no`) to ensure each record is unique. The `emp_no` and `dept_no` fields also act as foreign keys, linking to the employees and departments tables, respectively.
+This table, `dept_emp`, establishes the relationship between employees and departments. It uses a composite primary key (`emp_no`, `dept_no`) to ensure each record is unique. The `emp_no` and `dept_no` fields also act as foreign keys, linking to the `employees` and `departments` tables, respectively.
+#### Creating the DeptManager Table:
+```sql
+-- Create dept_manager table
+CREATE TABLE dept_manager (
+    dept_no VARCHAR(255) NOT NULL,
+    emp_no INT NOT NULL,
+    CONSTRAINT pk_dept_manager PRIMARY KEY (dept_no, emp_no),
+    CONSTRAINT fk_dept_manager_departments FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
+    CONSTRAINT fk_dept_manager_employees FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
+);
+```
+The `dept_manager` table maps departments to their managers. Similar to `dept_emp`, it uses a composite primary key (`dept_no`, `emp_no`) for unique identification. The `dept_no` and `emp_no` are foreign keys that reference the `departments` and `employees` tables, aligning each department with its manager.
