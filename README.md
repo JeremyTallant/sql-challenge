@@ -162,6 +162,6 @@ After successfully creating the tables, the next crucial step involves importing
 	* **Format**: Choose `csv` as the format.
 	* **Delimiter**: Specify the character that delimits fields in your CSV file (commonly a comma).
 	* **Header**: Check this box if your CSV file includes a header row. The header should match the column names of the table.
-	* **Encoding**: Choose the appropriate file encoding, typically 'UTF8'.
+	* **Encoding**: Choose the appropriate file encoding, typically `UTF8`.
 4. **Start the Import Process**: Click the `OK` button to begin importing data. pgAdmin will load the data from the CSV file into the table.
 5. **Verify the Data Import**: After importing each CSV file, it's good practice to verify that the data has been correctly loaded into the tables. You can run a few SELECT queries or check the table summary in pgAdmin.
