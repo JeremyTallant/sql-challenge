@@ -91,7 +91,7 @@ CREATE TABLE titles (
 ```
 This block creates the `titles` table with two columns: `title_id` (a unique identifier for each title) and `title` (the name of the title). The title_id is designated as the primary key, ensuring uniqueness across records.
 #### Creating the Departments Table:
-``sql
+```sql
 -- Create departments table
 CREATE TABLE departments (
     dept_no VARCHAR(255) NOT NULL,
