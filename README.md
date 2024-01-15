@@ -151,3 +151,5 @@ CREATE TABLE dept_manager (
 );
 ```
 The `dept_manager` table maps departments to their managers. Similar to `dept_emp`, it uses a composite primary key (`dept_no`, `emp_no`) for unique identification. The `dept_no` and `emp_no` are foreign keys that reference the `departments` and `employees` tables, aligning each department with its manager.
+
+Once the `table_schemata.sql` script is complete, run it against your PostgreSQL database to create the tables and establish their relationships, effectively setting up the foundational structure of your database.
