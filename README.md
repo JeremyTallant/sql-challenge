@@ -70,3 +70,12 @@ To set up a PostgreSQL session in pgAdmin and prepare for table creation:
 4. **Prepare for Table Creation**: Select the database, then click on the `Query Tool` button in the pgAdmin toolbar to open the SQL editor. This environment is where we will write and execute SQL commands to create our tables as defined in the ERD.
 
 With pgAdmin installed and configured, we are now ready to create the tables for our PostgreSQL database as outlined in our data model.
+
+In the `table_schemata.sql` script, we systematically define the structure of our database by creating each table and establishing their relationships. This process is crucial for setting up the database to accurately reflect our data model and ensure data integrity. Here's a walkthrough of each code block:
+
+#### Dropping Existing Tables:
+```sql
+-- Drop tables if they exist
+DROP TABLE IF EXISTS dept_manager, dept_emp, salaries, employees, titles, departments CASCADE;
+```
+This command ensures a clean slate by removing any existing tables that might conflict with our new schema. The `CASCADE` option is used to automatically drop objects that depend on these tables, like foreign key constraints, ensuring no residual dependencies are left behind.
