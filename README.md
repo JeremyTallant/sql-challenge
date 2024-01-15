@@ -62,9 +62,9 @@ To set up a PostgreSQL session in pgAdmin and prepare for table creation:
 3. **Add New Server**: In the pgAdmin dashboard, right-click on `Servers` in the browser tree and select `Create` > `Server`.
 
 4. **Configure Server Connection**:
-* In the `Create - Server` dialog, go to the `General` tab, and give your connection a meaningful name.
-* Move to the `Connection` tab, input your PostgreSQL server’s details: host name/address (often `localhost`), port (default `5432`), maintenance database (typically `postgres`), username, and password.
-* Click `Save` to establish the connection.
+	* In the `Create - Server` dialog, go to the `General` tab, and give your connection a meaningful name.
+	* Move to the `Connection` tab, input your PostgreSQL server’s details: host name/address (often `localhost`), port (default `5432`), maintenance database (typically `postgres`), username, and password.
+	* Click `Save` to establish the connection.
 
 5. **Access or Create Database**: Expand the newly added server, navigate to `Databases`. For a new database, right-click on `Databases`, select `Create` > `Database`, give it a name, and save.
 
