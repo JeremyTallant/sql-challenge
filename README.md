@@ -42,13 +42,13 @@ Utilizing [QuickDBD](https://www.quickdatabasediagrams.com/) for its intuitive d
 
 In the design of our database schema, each entity is meticulously structured to capture specific segments of our data:
 
-* **Employee**: This entity encapsulates personal and employment information. The `emp_no` (employee number) serves as the primary key, uniquely identifying each employee. Additionally, `emp_title_id` is a foreign key in this table, linking to the title_id in the Title table, thereby connecting each employee to their specific job title.
+* **Employee**: This entity encapsulates personal and employment information. The `emp_no` (employee number) serves as the primary key, uniquely identifying each employee. Additionally, `emp_title_id` is a foreign key in this table, linking to the `title_id` in the Title table, thereby connecting each employee to their specific job title.
 
 * **Department**: It details the organizational structure, with `dept_no` (department number) as the primary key, ensuring each department is uniquely identified.
 
 * **DeptEmp**: Acting as a link table, it aligns employees with their respective departments. Here, a composite key made up of `emp_no` and `dept_no` is used, as the combination uniquely identifies each record. `emp_no` and `dept_no` in this table are also foreign keys, referencing the Employee and Department tables, respectively.
 
-* **DeptManager**: This table maps out the leadership structure, connecting departments to their managers. Similar to DeptEmp, it uses a composite key of `emp_no` and `dept_no` for unique identification. Both these fields are foreign keys as well, with emp_no referencing the Employee table and dept_no referencing the Department table.
+* **DeptManager**: This table maps out the leadership structure, connecting departments to their managers. Similar to DeptEmp, it uses a composite key of `emp_no` and `dept_no` for unique identification. Both these fields are foreign keys as well, with `emp_no` referencing the Employee table and `dept_no` referencing the Department table.
 
 * **Title**: This entity catalogs possible employee roles, with `title_id` as the primary key, uniquely identifying each job title.
 
