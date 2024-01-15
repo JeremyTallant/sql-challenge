@@ -40,16 +40,22 @@ Utilizing [QuickDBD](https://www.quickdatabasediagrams.com/) for its intuitive d
 
 ![image](images/ErdDiagram.png)
 
-Each entity was designed to encapsulate specific aspects of our data:
+In the design of our database schema, each entity is meticulously structured to capture specific segments of our data:
 
-* `Employee`: Contains personal and employment details such as employee number (`emp_no`), emp_title_id, birth date, first and last names, sex, and hire date.
-* `Department`: Holds information related to the different departments within the organization, each identified by a unique department number (`dept_no`) and name (`dept_name`).
-* `DeptEmp`: Acts as a junction table that associates employees with departments, indicating where each employee works.
-* `DeptManager`: Another junction table, but specifically for managing relationships, linking departments to their respective managers.
-* `Title`: Stores the various titles or positions that employees can hold within the organization, with a unique title identifier (`title_id`).
-* `Salary`: Records the salary details for each employee, linked via the employee number.
+* **Employee**: This entity captures personal and employment information, with `emp_no` (employee number) serving as the unique identifier, hence the primary key.
 
-Primary keys are carefully selected to uniquely identify the records within each dataset, such as `emp_no` for the Employees table. The relationships between these entities were then defined using foreign keys to establish the connections necessary for our relational database structure. For instance, `emp_no` serves as a foreign key in multiple tables, linking employees to their salary, department, and managerial roles. This diagram ultimately acts as a blueprint for the subsequent Data Engineering phase, directing the creation of SQL tables and establishing their interrelations.
+* **Department**: It details the organizational structure, with `dept_no` (department number) as the primary key, ensuring each department is uniquely identified.
+
+* **DeptEmp**: Acting as a link table, it aligns employees with their respective departments. Here, a composite key made up of `emp_no` and `dept_no` is used, as the combination uniquely identifies each record. `emp_no` and `dept_no` in this table are also foreign keys, referencing the Employee and Department tables, respectively.
+
+* **DeptManager*: This table maps out the leadership structure, connecting departments to their managers. Similar to DeptEmp, it uses a composite key of `emp_no` and `dept_no` for unique identification. Both these fields are foreign keys as well, with emp_no referencing the Employee table and dept_no referencing the Department table.
+
+* **Title**: This entity catalogs possible employee roles, with `title_id` as the primary key, uniquely identifying each job title.
+
+* **Salary**: It tracks compensation figures and has a primary key of `emp_no`. In this table, `emp_no `serves as a foreign key referencing the Employee table.
+
+
+These primary, foreign, and composite keys across each table play a crucial role in preserving data integrity and facilitating efficient data querying in our relational database. This carefully constructed diagram sets the stage for the Data Engineering phase, guiding the creation and interrelation of SQL tables.
 ### Data Engineering 
 In the Data Engineering phase, we operationalize our data model by constructing and populating PostgreSQL tables, carefully defining data types, primary and foreign keys, and constraints to ensure data integrity and seamless inter-table relationships, paving the way for robust data analysis.
 
