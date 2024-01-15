@@ -39,3 +39,12 @@ The data modeling phase is the cornerstone of the Database Revival Project, wher
 Utilizing [QuickDBD](https://www.quickdatabasediagrams.com/) for its intuitive design capabilities, we construct an Entity Relationship Diagram (ERD) to visually map out the data relationships. 
 
 ![image](images/ErdDiagram.png)
+
+Each entity was designed to encapsulate specific aspects of our data:
+
+* `Employee`: Contains personal and employment details such as employee number (`emp_no`), birth date, first and last names, sex, and hire date.
+* `Department`: Holds information related to the different departments within the organization, each identified by a unique department number (`dept_no`) and name (`dept_name`).
+* `DeptEmp`: Acts as a junction table that associates employees with departments, indicating where each employee works.
+* `DeptManager`: Another junction table, but specifically for managing relationships, linking departments to their respective managers.
+* `Title`: Stores the various titles or positions that employees can hold within the organization, with a unique title identifier (`title_id`).
+* `Salary`: Records the salary details for each employee, linked via the employee number.
