@@ -153,3 +153,15 @@ CREATE TABLE dept_manager (
 The `dept_manager` table maps departments to their managers. Similar to `dept_emp`, it uses a composite primary key (`dept_no`, `emp_no`) for unique identification. The `dept_no` and `emp_no` are foreign keys that reference the `departments` and `employees` tables, aligning each department with its manager.
 
 Once the `table_schemata.sql` script is complete, run it against your PostgreSQL database to create the tables and establish their relationships, effectively setting up the foundational structure of your database.
+#### Importing CSV Files into the Database
+After successfully creating the tables, the next crucial step involves importing data from the CSV files into their respective tables in the database. This process populates the newly created tables with historical employee data, allowing for detailed analysis and query execution. Here's how to perform this import:
+1. **Navigate to the Table**: In the pgAdmin dashboard, navigate to the specific table into which you want to import data. You can find the tables listed under your database in the `Schemas` > `public` > `Tables` section.
+2. **Import Data from CSV**: Right-click on the table and select the `Import/Export` option. In the dialog that appears, make sure to select `Import` as the direction.
+3. **Configure Import Settings**:
+	* **File**: Click on the '...' button to browse and select the corresponding CSV file for the table.
+	* **Format**: Choose 'csv' as the format.
+	* **Delimiter**: Specify the character that delimits fields in your CSV file (commonly a comma).
+	* **Header**: Check this box if your CSV file includes a header row. The header should match the column names of the table.
+	* **Encoding**: Choose the appropriate file encoding, typically 'UTF8'.
+4. **Start the Import Process**: Click the `OK` button to begin importing data. pgAdmin will load the data from the CSV file into the table.
+5. **Verify the Data Import**: After importing each CSV file, it's good practice to verify that the data has been correctly loaded into the tables. You can run a few SELECT queries or check the table summary in pgAdmin.
