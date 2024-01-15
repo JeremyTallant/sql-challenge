@@ -42,17 +42,17 @@ Utilizing [QuickDBD](https://www.quickdatabasediagrams.com/) for its intuitive d
 
 In the design of our database schema, each entity is meticulously structured to capture specific segments of our data:
 
-* **Employee**: This entity encapsulates personal and employment information. The `emp_no` (employee number) serves as the primary key, uniquely identifying each employee. Additionally, `emp_title_id` is a foreign key in this table, linking to the `title_id` in the Title table, thereby connecting each employee to their specific job title.
+* **employees**: This entity encapsulates personal and employment information. The `emp_no` (employee number) serves as the primary key, uniquely identifying each employee. Additionally, `emp_title_id` is a foreign key in this table, linking to the `title_id` in the titles table, thereby connecting each employee to their specific job title.
 
-* **Department**: It details the organizational structure, with `dept_no` (department number) as the primary key, ensuring each department is uniquely identified.
+* **departments**: It details the organizational structure, with `dept_no` (department number) as the primary key, ensuring each department is uniquely identified.
 
-* **DeptEmp**: Acting as a link table, it aligns employees with their respective departments. Here, a composite key made up of `emp_no` and `dept_no` is used, as the combination uniquely identifies each record. `emp_no` and `dept_no` in this table are also foreign keys, referencing the Employee and Department tables, respectively.
+* **dept_emp**: Acting as a link table, it aligns employees with their respective departments. Here, a composite key made up of `emp_no` and `dept_no` is used, as the combination uniquely identifies each record. `emp_no` and `dept_no` in this table are also foreign keys, referencing the employees and departments tables, respectively.
 
-* **DeptManager**: This table maps out the leadership structure, connecting departments to their managers. Similar to DeptEmp, it uses a composite key of `emp_no` and `dept_no` for unique identification. Both these fields are foreign keys as well, with `emp_no` referencing the Employee table and `dept_no` referencing the Department table.
+* **dept_manager**: This table maps out the leadership structure, connecting departments to their managers. Similar to dept_emp, it uses a composite key of `emp_no` and `dept_no` for unique identification. Both these fields are foreign keys as well, with `emp_no` referencing the employees table and `dept_no` referencing the departments table.
 
-* **Title**: This entity catalogs possible employee roles, with `title_id` as the primary key, uniquely identifying each job title.
+* **titles**: This entity catalogs possible employee roles, with `title_id` as the primary key, uniquely identifying each job title.
 
-* **Salary**: It tracks compensation figures and has a primary key of `emp_no`. In this table, `emp_no` serves as a foreign key referencing the Employee table.
+* **salaries**: It tracks compensation figures and has a primary key of `emp_no`. In this table, `emp_no` serves as a foreign key referencing the employees table.
 
 
 These primary, foreign, and composite keys across each table play a crucial role in preserving data integrity and facilitating efficient data querying in our relational database. This carefully constructed diagram sets the stage for the Data Engineering phase, guiding the creation and interrelation of SQL tables.
