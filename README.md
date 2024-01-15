@@ -65,7 +65,7 @@ To set up a PostgreSQL session in pgAdmin and prepare for table creation:
 
 2. **Open pgAdmin**: Launch pgAdmin from your computer; it will typically open in a new browser window or tab.
 
-3. **Access or Create Database**: Expand the newly added server, navigate to `Databases`. For a new database, right-click on `Databases`, select `Create` > `Database`, give it a name, and save.
+3. **Create Database**: Navigate to `Databases`. For a new database, right-click on `Databases`, select `Create` > `Database`, give it a name, and save.
 
 4. **Prepare for Table Creation**:
 	* Select the database, then click on the `Query Tool' button in the pgAdmin toolbar to open the SQL editor. This environment is where we will write and execute SQL commands to create our tables as defined in the ERD.
