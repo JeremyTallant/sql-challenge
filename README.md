@@ -48,7 +48,7 @@ In the design of our database schema, each entity is meticulously structured to 
 
 * **DeptEmp**: Acting as a link table, it aligns employees with their respective departments. Here, a composite key made up of `emp_no` and `dept_no` is used, as the combination uniquely identifies each record. `emp_no` and `dept_no` in this table are also foreign keys, referencing the Employee and Department tables, respectively.
 
-* **DeptManager*: This table maps out the leadership structure, connecting departments to their managers. Similar to DeptEmp, it uses a composite key of `emp_no` and `dept_no` for unique identification. Both these fields are foreign keys as well, with emp_no referencing the Employee table and dept_no referencing the Department table.
+* **DeptManager**: This table maps out the leadership structure, connecting departments to their managers. Similar to DeptEmp, it uses a composite key of `emp_no` and `dept_no` for unique identification. Both these fields are foreign keys as well, with emp_no referencing the Employee table and dept_no referencing the Department table.
 
 * **Title**: This entity catalogs possible employee roles, with `title_id` as the primary key, uniquely identifying each job title.
 
