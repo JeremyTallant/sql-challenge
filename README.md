@@ -159,7 +159,7 @@ After successfully creating the tables, the next crucial step involves importing
 2. **Import Data from CSV**: Right-click on the table and select the `Import/Export` option. In the dialog that appears, make sure to select `Import` as the direction.
 3. **Configure Import Settings**:
 	* **File**: Click on the '...' button to browse and select the corresponding CSV file for the table.
-	* **Format**: Choose 'csv' as the format.
+	* **Format**: Choose `csv` as the format.
 	* **Delimiter**: Specify the character that delimits fields in your CSV file (commonly a comma).
 	* **Header**: Check this box if your CSV file includes a header row. The header should match the column names of the table.
 	* **Encoding**: Choose the appropriate file encoding, typically 'UTF8'.
