@@ -79,3 +79,14 @@ In the `table_schemata.sql` script, we systematically define the structure of ou
 DROP TABLE IF EXISTS dept_manager, dept_emp, salaries, employees, titles, departments CASCADE;
 ```
 This command ensures a clean slate by removing any existing tables that might conflict with our new schema. The `CASCADE` option is used to automatically drop objects that depend on these tables, like foreign key constraints, ensuring no residual dependencies are left behind.
+
+#### Creating the Titles Table:
+```sql
+-- Create titles table
+CREATE TABLE titles (
+    title_id VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    CONSTRAINT pk_titles PRIMARY KEY (title_id)
+);
+```
+This block creates the `titles` table with two columns: `title_id` (a unique identifier for each title) and `title` (the name of the title). The title_id is designated as the primary key, ensuring uniqueness across records.
