@@ -116,3 +116,14 @@ CREATE TABLE employees (
 );
 ```
 This table holds employee data like employee number (`emp_no`), title ID, birth date, name, sex, and hire date. `emp_no` is the primary key, while `emp_title_id` is a foreign key linking to the titles table, connecting employees to their job titles.
+#### Creating the Salaries Table:
+```sql
+-- Create salaries table
+CREATE TABLE salaries (
+    emp_no INT NOT NULL,
+    salary INT NOT NULL,
+    CONSTRAINT pk_salaries PRIMARY KEY (emp_no),
+    CONSTRAINT fk_salaries_employees FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
+);
+```
+In the `salaries` table, we track employee salaries. Each record consists of an employee number and their salary. The employee number (`emp_no`) acts as a primary key and is also a foreign key that references the `employees` table, tying salary information to the respective employee.
