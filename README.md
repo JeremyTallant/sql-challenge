@@ -38,7 +38,7 @@ The data modeling phase is the cornerstone of the Database Revival Project, wher
 
 Utilizing [QuickDBD](https://www.quickdatabasediagrams.com/) for its intuitive design capabilities, we construct an Entity Relationship Diagram (ERD) to visually map out the data relationships. 
 
-![image](images/erd.svg)
+![image](images/erd.png)
 
 In the design of our database schema, each entity is meticulously structured to capture specific segments of our data:
 
