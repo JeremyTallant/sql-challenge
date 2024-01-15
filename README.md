@@ -42,7 +42,7 @@ Utilizing [QuickDBD](https://www.quickdatabasediagrams.com/) for its intuitive d
 
 In the design of our database schema, each entity is meticulously structured to capture specific segments of our data:
 
-* **Employee**: This entity captures personal and employment information, with `emp_no` (employee number) serving as the unique identifier, hence the primary key.
+* **Employee**: This entity encapsulates personal and employment information. The `emp_no` (employee number) serves as the primary key, uniquely identifying each employee. Additionally, `emp_title_id` is a foreign key in this table, linking to the title_id in the Title table, thereby connecting each employee to their specific job title.
 
 * **Department**: It details the organizational structure, with `dept_no` (department number) as the primary key, ensuring each department is uniquely identified.
 
@@ -52,7 +52,7 @@ In the design of our database schema, each entity is meticulously structured to 
 
 * **Title**: This entity catalogs possible employee roles, with `title_id` as the primary key, uniquely identifying each job title.
 
-* **Salary**: It tracks compensation figures and has a primary key of `emp_no`. In this table, `emp_no `serves as a foreign key referencing the Employee table.
+* **Salary**: It tracks compensation figures and has a primary key of `emp_no`. In this table, `emp_no` serves as a foreign key referencing the Employee table.
 
 
 These primary, foreign, and composite keys across each table play a crucial role in preserving data integrity and facilitating efficient data querying in our relational database. This carefully constructed diagram sets the stage for the Data Engineering phase, guiding the creation and interrelation of SQL tables.
