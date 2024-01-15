@@ -52,3 +52,24 @@ Each entity was designed to encapsulate specific aspects of our data:
 Primary keys are carefully selected to uniquely identify the records within each dataset, such as `emp_no` for the Employees table. The relationships between these entities were then defined using foreign keys to establish the connections necessary for our relational database structure. For instance, `emp_no` serves as a foreign key in multiple tables, linking employees to their salary, department, and managerial roles. This diagram ultimately acts as a blueprint for the subsequent Data Engineering phase, directing the creation of SQL tables and establishing their interrelations.
 ### Data Engineering 
 In the Data Engineering phase, we operationalize our data model by constructing and populating PostgreSQL tables, carefully defining data types, primary and foreign keys, and constraints to ensure data integrity and seamless inter-table relationships, paving the way for robust data analysis.
+
+To set up a PostgreSQL session in pgAdmin and prepare for table creation:
+
+1. **Download pgAdmin**: Visit the [official pgAdmin download page](https://www.pgadmin.org/), select the version compatible with your operating system, and follow the instructions to install it.
+
+2. **Open pgAdmin**: Launch pgAdmin from your computer; it will typically open in a new browser window or tab.
+
+3. **Add New Server**: In the pgAdmin dashboard, right-click on `Servers` in the browser tree and select `Create` > `Server`.
+
+4. **Configure Server Connection**:
+* In the `Create - Server` dialog, go to the `General` tab, and give your connection a meaningful name.
+* Move to the `Connection` tab, input your PostgreSQL server’s details: host name/address (often `localhost`), port (default `5432`), maintenance database (typically `postgres`), username, and password.
+* Click `Save` to establish the connection.
+
+5. **Access or Create Database**: Expand the newly added server, navigate to `Databases`. For a new database, right-click on `Databases`, select `Create` > `Database`, give it a name, and save.
+
+6. **Prepare for Table Creation**:
+
+Select the database, right-click on `Schemas` > `public` > `Tables`, choose `Create` > `Table`.
+
+With pgAdmin installed and configured, we are now ready to create the tables for our PostgreSQL database as outlined in our data model.
