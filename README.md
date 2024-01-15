@@ -100,3 +100,19 @@ CREATE TABLE departments (
 );
 ```
 The `departments` table is created with `dept_no` (a unique department number) and `dept_name` (the name of the department). The `dept_no` column is set as the primary key, ensuring that each department is distinct.
+#### Creating the Employees Table:
+```sql
+-- Create employees table
+CREATE TABLE employees (
+    emp_no INT NOT NULL,
+    emp_title_id VARCHAR(255) NOT NULL,
+    birth_date DATE NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    sex VARCHAR(1) NOT NULL,
+    hire_date DATE NOT NULL,
+    CONSTRAINT pk_employees PRIMARY KEY (emp_no),
+    CONSTRAINT fk_employees_titles FOREIGN KEY (emp_title_id) REFERENCES titles(title_id)
+);
+```
+This table holds employee data like employee number (`emp_no`), title ID, birth date, name, sex, and hire date. `emp_no` is the primary key, while `emp_title_id` is a foreign key linking to the titles table, connecting employees to their job titles.
