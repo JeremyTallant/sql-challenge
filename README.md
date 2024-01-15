@@ -127,3 +127,15 @@ CREATE TABLE salaries (
 );
 ```
 In the `salaries` table, we track employee salaries. Each record consists of an employee number and their salary. The employee number (`emp_no`) acts as a primary key and is also a foreign key that references the `employees` table, tying salary information to the respective employee.
+#### Creating the DeptEmp Table:
+```sql
+-- Create dep_emp table
+CREATE TABLE dept_emp (
+    emp_no INT NOT NULL,
+    dept_no VARCHAR(255) NOT NULL,
+    CONSTRAINT pk_dept_emp PRIMARY KEY (emp_no, dept_no),
+    CONSTRAINT fk_dept_emp_employees FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
+    CONSTRAINT fk_dept_emp_departments FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
+);
+```
+This table, `dept_emp`, establishes the relationship between employees and departments. It uses a composite primary key (`emp_no`, `dept_no`) to ensure each record is unique. The `emp_no` and `dept_no` fields also act as foreign keys, linking to the employees and departments tables, respectively.
