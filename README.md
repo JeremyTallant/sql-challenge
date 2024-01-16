@@ -188,7 +188,7 @@ WHERE EXTRACT(YEAR FROM hire_date) = 1986;
 This query extracts the first name, last name, and hire date of employees from the `employees` table, specifically targeting those who were hired in the year 1986. It utilizes the `EXTRACT(YEAR FROM hire_date)` function to filter the records, ensuring that only employees with a hire date in 1986 are selected.
 #### Department Managers
 ```sql
---3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+-- 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
 SELECT d.dept_no, d.dept_name, e.emp_no, e.last_name, e.first_name
 FROM departments d
 JOIN dept_manager dm ON d.dept_no = dm.dept_no
