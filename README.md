@@ -167,3 +167,14 @@ After successfully creating the tables, the next crucial step involves importing
 5. **Verify the Data Import**: After importing each CSV file, it's good practice to verify that the data has been correctly loaded into the tables. You can run a few SELECT queries or check the table summary in pgAdmin.
 
 With the successful creation of the database structure and the importation of the CSV files using pgAdmin 4, we conclude the Data Engineering phase, laying a solid foundation for the upcoming data analysis and exploration tasks.
+### Data Analysis
+In the Data Analysis section of our implementation, we meticulously craft and execute SQL queries to analyze the database, aiming to uncover meaningful insights and patterns from the historical employee data.
+
+#### Employee Details and Salaries
+```sql
+-- 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
+SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary
+FROM employees e
+JOIN salaries s ON e.emp_no = s.emp_no;
+```
+his query joins the `employees` and `salaries` tables to list essential details of each employee, including their employee number, last name, first name, sex, and corresponding salary. By using the `emp_no` field as a join key, it ensures that each employee's salary is accurately matched with their personal information.
