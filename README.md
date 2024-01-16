@@ -178,3 +178,11 @@ FROM employees e
 JOIN salaries s ON e.emp_no = s.emp_no;
 ```
 This query joins the `employees` and `salaries` tables to list essential details of each employee, including their employee number, last name, first name, sex, and corresponding salary. By using the `emp_no` field as a join key, it ensures that each employee's salary is accurately matched with their personal information.
+#### Employees Hired in 1986
+```sql
+-- 2. List first name, last name, and hire date for employees who were hired in 1986.
+SELECT first_name, last_name, hire_date
+FROM employees
+WHERE EXTRACT(YEAR FROM hire_date) = 1986;
+```
+This query extracts the first name, last name, and hire date of employees from the `employees` table, specifically targeting those who were hired in the year 1986. It utilizes the `EXTRACT(YEAR FROM hire_date)` function to filter the records, ensuring that only employees with a hire date in 1986 are selected.
