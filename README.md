@@ -222,3 +222,13 @@ JOIN departments d ON de.dept_no = d.dept_no
 WHERE d.dept_name = 'Sales';
 ```
 This query identifies and lists all employees working in the Sales department. It involves joining the `employees` table with the `dept_emp` table to link each employee to their respective department, and then joining with the `departments` table to include the department names. The `WHERE` clause specifically filters for the Sales department, extracting the employee number, last name, first name, and department name for these employees.
+#### Employees in Sales and Development Departments
+```sql
+-- 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM employees e 
+JOIN dept_emp de ON e.emp_no = de.emp_no
+JOIN departments d ON de.dept_no = d.dept_no
+WHERE d.dept_name IN ('Sales', 'Development');
+```
+This query targets employees in both the Sales and Development departments. It joins the `employees` table with `dept_emp` and `departments` tables to connect each employee to their respective department. The `WHERE` clause utilizes the `IN` operator to specifically filter for the Sales and Development departments, listing each relevant employee's number, last name, first name, and department name.
