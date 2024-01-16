@@ -212,3 +212,13 @@ FROM employees
 WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
 ```
 This query is tailored to select employees with the first name "Hercules" and whose last names start with the letter "B." It filters the `employees` table for these specific criteria, retrieving the first name, last name, and sex of the matching employees.
+#### Employees in the Sales Department
+```sql
+-- 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM employees e 
+JOIN dept_emp de ON e.emp_no = de.emp_no
+JOIN departments d ON de.dept_no = d.dept_no
+WHERE d.dept_name = 'Sales';
+```
+This query identifies and lists all employees working in the Sales department. It involves joining the `employees` table with the `dept_emp` table to link each employee to their respective department, and then joining with the `departments` table to include the department names. The `WHERE` clause specifically filters for the Sales department, extracting the employee number, last name, first name, and department name for these employees.
