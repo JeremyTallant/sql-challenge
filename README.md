@@ -165,3 +165,5 @@ After successfully creating the tables, the next crucial step involves importing
 	* **Encoding**: Choose the appropriate file encoding, typically `UTF8`.
 4. **Start the Import Process**: Click the `OK` button to begin importing data. pgAdmin will load the data from the CSV file into the table.
 5. **Verify the Data Import**: After importing each CSV file, it's good practice to verify that the data has been correctly loaded into the tables. You can run a few SELECT queries or check the table summary in pgAdmin.
+
+With the successful creation of the database structure and the importation of the CSV files using pgAdmin 4, we conclude the Data Engineering phase, laying a solid foundation for the upcoming data analysis and exploration tasks.
