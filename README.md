@@ -204,3 +204,11 @@ JOIN dept_emp de ON e.emp_no = de.emp_no
 JOIN departments d ON de.dept_no = d.dept_no;
 ```
 This query gathers and lists each employee's department along with their personal information. It joins the `employees` table with the `dept_emp` table to link each employee to their respective department, and then with the `departments` table to get the department names. The result includes the employee number, last name, first name, and the name of the department they belong to.
+#### Employees Named Hercules with Last Names Starting with B
+```sql
+-- 5. Employees Named Hercules with Last Names Starting with B
+SELECT first_name, last_name, sex
+FROM employees
+WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
+```
+This query is tailored to select employees with the first name "Hercules" and whose last names start with the letter "B." It filters the `employees` table for these specific criteria, retrieving the first name, last name, and sex of the matching employees.
