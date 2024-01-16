@@ -177,4 +177,4 @@ SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary
 FROM employees e
 JOIN salaries s ON e.emp_no = s.emp_no;
 ```
-his query joins the `employees` and `salaries` tables to list essential details of each employee, including their employee number, last name, first name, sex, and corresponding salary. By using the `emp_no` field as a join key, it ensures that each employee's salary is accurately matched with their personal information.
+This query joins the `employees` and `salaries` tables to list essential details of each employee, including their employee number, last name, first name, sex, and corresponding salary. By using the `emp_no` field as a join key, it ensures that each employee's salary is accurately matched with their personal information.
