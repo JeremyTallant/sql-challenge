@@ -195,3 +195,12 @@ JOIN dept_manager dm ON d.dept_no = dm.dept_no
 JOIN employees e ON dm.emp_no = e.emp_no;
 ```
 This query is crafted to list the managers for each department, providing essential details like the department number, department name, and the manager's employee number, last name, and first name. It achieves this by joining the `departments` table with the `dept_manager` table on the department number, and then further joining with the `employees` table on the employee number to fetch the manager's personal details.
+#### Employee Department Details
+```sql
+-- 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM employees e
+JOIN dept_emp de ON e.emp_no = de.emp_no
+JOIN departments d ON de.dept_no = d.dept_no;
+```
+This query gathers and lists each employee's department along with their personal information. It joins the `employees` table with the `dept_emp` table to link each employee to their respective department, and then with the `departments` table to get the department names. The result includes the employee number, last name, first name, and the name of the department they belong to.
