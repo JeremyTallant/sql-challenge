@@ -384,3 +384,12 @@ Key Aspects of the Query Results:
 1. **Hiring Trends**: The data gives an insight into the volume of hiring done in 1986, which could be indicative of the company's growth, expansion, or turnover rates during that period.
 2. **Employee Information**: Listing first names, last names, and hire dates provides a snapshot of the individuals who joined the company in 1986, contributing to a historical record of the workforce.
 3. **Temporal Analysis**: The focus on the hire date allows for a time-specific analysis, which can be valuable for understanding hiring trends, workforce expansion, and historical staffing strategies.
+#### Summary of Department Managers Query
+![image](images/query3.png)
+
+The SQL query executed provides a detailed list of managers for each department within the organization. The result encompasses department numbers, department names, along with each manager's employee number, last name, and first name. Notably, the query identifies a total of 24 managers, indicating the breadth of leadership across various departments.
+
+Key Aspects of the Query Results:
+* **Comprehensive Leadership Overview**: The data effectively outlines the leadership structure, linking each of the 24 managers to their respective departments, thereby offering a clear view of the managerial hierarchy.
+* **Precise Manager Identification**: Including both employee numbers and names allows for precise identification of each manager, a crucial aspect for internal operations, communications, and record-keeping.
+* **Inter-Departmental Connect**: The seamless join between the departments, dept_manager, and employees tables ensures a holistic view, connecting managerial roles with specific departmental functions.
