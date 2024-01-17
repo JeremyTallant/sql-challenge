@@ -336,3 +336,29 @@ This section of the code performs a crucial analysis task: calculating the avera
 * `pd.read_sql(avg_salary_query, connection)`: Executes the query using Pandas' `read_sql` function with the established database connection. The result of the query, which is a DataFrame containing each title and its corresponding average salary, is stored in `avg_salary_df`.
 
 This DataFrame, `avg_salary_df`, is now ready to be used for further visualization or analysis, such as creating a bar chart to compare the average salaries across different job titles in the organization.
+#### Creating a Bar Chart of Average Salary by Title
+```python
+# Plotting the bar chart using Seaborn
+plt.figure(figsize=(12, 8))
+sns.barplot(x='title', y='average_salary', data=avg_salary_df, color='green')
+
+plt.title('Average Salary by Title')
+plt.xlabel('Title')
+plt.ylabel('Average Salary')
+plt.xticks(rotation=45)
+
+# Show the plot
+plt.show()
+
+# Close the database connection
+connection.close()
+```
+This code block is focused on visually representing the average salary for each job title:
+* `plt.figure(figsize=(12, 8))`: Sets up a figure for the bar chart with a specified size, ensuring the chart is large enough for clear visualization.
+* `sns.barplot(...)`: Utilizes Seaborn's `barplot` function to create the bar chart. The x-axis is set to 'title' and the y-axis to 'average_salary', drawing data from `avg_salary_df`. Each bar represents the average salary for a particular job title, with the bars colored green.
+* `plt.title`, `plt.xlabel`, and `plt.ylabel`: These lines add a title to the chart and label the axes, making the plot informative and easy to interpret. The title 'Average Salary by Title' succinctly describes the chart's purpose.
+* `plt.xticks(rotation=45)`: Rotates the x-axis labels (job titles) by 45 degrees to prevent overlapping text, ensuring that each job title is readable.
+* `plt.show()`: Displays the bar chart within the Jupyter Notebook.
+* `connection.close()`: Closes the database connection. This is a best practice to free up database resources once all the necessary data retrieval operations are completed.
+
+This bar chart is an effective way to compare average salaries across different titles, providing clear visual insights into the compensation structure of the organization.
