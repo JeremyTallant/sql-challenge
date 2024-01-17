@@ -375,5 +375,12 @@ Key Aspects of the Query Results:
 1. **Employee Identification**: Each row uniquely identifies an employee through their employee number, facilitating easy referencing and data management.
 2. **Personal Details**: The inclusion of last names, first names, and sex of the employees assists in understanding the demographic composition of the workforce. This information is crucial for HR-related analytics, such as diversity assessments and personnel management.
 3. **Salary Insights**: By associating each employee with their salary, the query provides vital data for financial analysis, payroll management, and budgeting.
+### Summary of Employees Hired in 1986 Query
+![image](images/query2.png)
 
+The SQL query executed focuses on employees who were hired in the year 1986, presenting their first names, last names, and hire dates. The result, encompassing a total of 36,150 rows, offers a historical perspective of the hiring pattern for that particular year.
 
+Key Aspects of the Query Results:
+1. **Hiring Trends**: The data gives an insight into the volume of hiring done in 1986, which could be indicative of the company's growth, expansion, or turnover rates during that period.
+2. **Employee Information**: Listing first names, last names, and hire dates provides a snapshot of the individuals who joined the company in 1986, contributing to a historical record of the workforce.
+3. **Temporal Analysis**: The focus on the hire date allows for a time-specific analysis, which can be valuable for understanding hiring trends, workforce expansion, and historical staffing strategies.
