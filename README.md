@@ -390,6 +390,15 @@ Key Aspects of the Query Results:
 The SQL query executed provides a detailed list of managers for each department within the organization. The result encompasses department numbers, department names, along with each manager's employee number, last name, and first name. Notably, the query identifies a total of 24 managers, indicating the breadth of leadership across various departments.
 
 Key Aspects of the Query Results:
-* **Comprehensive Leadership Overview**: The data effectively outlines the leadership structure, linking each of the 24 managers to their respective departments, thereby offering a clear view of the managerial hierarchy.
-* **Precise Manager Identification**: Including both employee numbers and names allows for precise identification of each manager, a crucial aspect for internal operations, communications, and record-keeping.
-* **Inter-Departmental Connect**: The seamless join between the departments, dept_manager, and employees tables ensures a holistic view, connecting managerial roles with specific departmental functions.
+1. **Comprehensive Leadership Overview**: The data effectively outlines the leadership structure, linking each of the 24 managers to their respective departments, thereby offering a clear view of the managerial hierarchy.
+2. **Precise Manager Identification**: Including both employee numbers and names allows for precise identification of each manager, a crucial aspect for internal operations, communications, and record-keeping.
+3. **Inter-Departmental Connect**: The seamless join between the departments, dept_manager, and employees tables ensures a holistic view, connecting managerial roles with specific departmental functions.
+### Summary of Employee Department Details
+![image](images/query4.png)
+
+This SQL query efficiently maps each employee to their respective department, providing a comprehensive dataset that includes the employee's number, last name, first name, and the name of the department they are associated with.
+
+Key Aspects of the Query Results:
+1. **Employee-Department Association**: The query bridges the gap between individual employees and their respective departments, offering a clear understanding of where each employee is positioned within the organizational structure.
+2. **Detailed Employee Information**: By including employee numbers along with full names, the data facilitates easy identification and referencing of individual staff members.
+3. **Comprehensive Departmental View**: The inclusion of department names alongside employee details provides a complete picture of the workforce distribution across various departments.
