@@ -370,6 +370,7 @@ Accompanying our summaries are two distinct chart visualizations – a histogram
 ![image](images/query1.png)
 
 The executed SQL query provides a comprehensive view of each employee's personal and salary details within the organization. It presents a table listing the employee number, last name, first name, sex, and corresponding salary for all employees. With a total count of 300,024 employees, the data offers an extensive overview of the workforce demographics and salary distribution.
+
 Key Aspects of the Query Results:
 1. **Employee Identification**: Each row uniquely identifies an employee through their employee number, facilitating easy referencing and data management.
 2. **Personal Details**: The inclusion of last names, first names, and sex of the employees assists in understanding the demographic composition of the workforce. This information is crucial for HR-related analytics, such as diversity assessments and personnel management.
