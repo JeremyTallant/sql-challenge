@@ -265,3 +265,18 @@ This code block is the initial setup for our data analysis in the Jupyter Notebo
 * Importing database credentials from `config.py`: The `username` and `password` are imported from a configuration file, adhering to best practices for sensitive data management.
 
 This setup ensures we have all the necessary tools and configurations in place to proceed with connecting to our database and visualizing the data.
+#### Establishing Database Connection
+```python
+# Create engine and connection to the database 
+engine = create_engine(f'postgresql://{username}:{password}@localhost:5432/HistoricalEmployeeDB')
+connection = engine.connect()
+```
+This code block is responsible for establishing a connection to the PostgreSQL database. Here's what it does:
+
+* `create_engine(...)`: This function from SQLAlchemy creates a new instance of an engine that manages connections to the database. It uses a connection string formatted as `postgresql://username:password@localhost:5432/HistoricalEmployeeDB`, where:
+	* `username` and `password` are imported from the `config` module, ensuring secure handling of credentials.
+	* `localhost:5432` specifies the host and port where the PostgreSQL server is running.
+	* `HistoricalEmployeeDB` is the name of the database we are connecting to.
+* `engine.connect()`: This method establishes a connection to the database using the engine we just created.
+
+This connection is essential for executing SQL commands and queries directly from the Jupyter Notebook, allowing us to retrieve and manipulate data from the database for our analysis.
