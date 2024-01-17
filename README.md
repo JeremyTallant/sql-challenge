@@ -393,7 +393,7 @@ Key Aspects of the Query Results:
 1. **Comprehensive Leadership Overview**: The data effectively outlines the leadership structure, linking each of the 24 managers to their respective departments, thereby offering a clear view of the managerial hierarchy.
 2. **Precise Manager Identification**: Including both employee numbers and names allows for precise identification of each manager, a crucial aspect for internal operations, communications, and record-keeping.
 3. **Inter-Departmental Connect**: The seamless join between the departments, dept_manager, and employees tables ensures a holistic view, connecting managerial roles with specific departmental functions.
-### Summary of Employee Department Details
+### Summary of Employee Department Details Query
 ![image](images/query4.png)
 
 This SQL query efficiently maps each employee to their respective department, providing a comprehensive dataset that includes the employee's number, last name, first name, and the name of the department they are associated with.
@@ -402,3 +402,12 @@ Key Aspects of the Query Results:
 1. **Employee-Department Association**: The query bridges the gap between individual employees and their respective departments, offering a clear understanding of where each employee is positioned within the organizational structure.
 2. **Detailed Employee Information**: By including employee numbers along with full names, the data facilitates easy identification and referencing of individual staff members.
 3. **Comprehensive Departmental View**: The inclusion of department names alongside employee details provides a complete picture of the workforce distribution across various departments.
+### Summary of Employees Named Hercules with Last Names Starting with B Query
+![image](images/query5.png)
+
+This specific SQL query identifies a unique subset of employees, specifically those named Hercules with last names beginning with the letter "B". The query returned a total of 20 rows, indicating there are 20 employees who match these criteria.
+
+Key Aspects of the Query Results:
+1. **Unique Name Combination**: The query focuses on a rare and specific name combination, filtering for first names exactly matching 'Hercules' and last names starting with 'B'.
+2. **Data Scope**: It retrieves the first name, last name, and sex of the employees, providing essential details about these individuals.
+3. **Narrowed Down Results**: The return of 20 rows from what is presumably a much larger database highlights the effectiveness of SQL in pinpointing a small, distinct group within a vast employee dataset.
