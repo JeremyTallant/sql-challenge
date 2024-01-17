@@ -280,3 +280,16 @@ This code block is responsible for establishing a connection to the PostgreSQL d
 * `engine.connect()`: This method establishes a connection to the database using the engine we just created.
 
 This connection is essential for executing SQL commands and queries directly from the Jupyter Notebook, allowing us to retrieve and manipulate data from the database for our analysis.
+#### Retrieving Salary Data from the Database
+```python
+# SQL query to fetch salary data
+salary_query = text("SELECT salary FROM salaries")
+
+# Fetch data into DataFrame
+salary_df = pd.read_sql(salary_query, connection)
+```
+This section of the code is dedicated to fetching salary data from the database:
+	* `salary_query = text("SELECT salary FROM salaries")`: This line creates an SQL query to select all entries from the `salary` column in the `salaries` table. The `text()` function from SQLAlchemy is used to prepare the SQL statement. This approach is particularly useful for ensuring that the query is safely constructed, especially when dealing with variables or dynamic query construction.
+	* `salary_df = pd.read_sql(salary_query, connection)`: Here, the query is executed using Pandas' `read_sql` function, which takes the SQL query and the database connection as arguments. The result of the query is stored in a Pandas DataFrame called `salary_df`. This DataFrame will be used for further analysis and visualization, as it now contains all the salary data from the database.
+
+This step is pivotal in transitioning from data retrieval to analysis, as it provides the necessary data in a format that can be easily manipulated and visualized using Python's data analysis tools.
