@@ -241,3 +241,27 @@ GROUP BY last_name
 ORDER BY frequency DESC;
 ```
 This query calculates the frequency of each last name among employees. It groups the records in the `employees` table by `last_name` and uses the `COUNT(*)` function to count the number of occurrences of each last name. The results are then ordered in descending order (`DESC`) based on this frequency count, showing the most common last names at the top.
+
+As we dive deeper into the data analysis phase, an intriguing possibility emerges: could the dataset we're working with be a fabricated one, possibly a test of our data engineering abilities as a new hire? To investigate this further and provide concrete evidence to our suspicions, we'll leverage the power of data visualization. Visualizations can often reveal patterns and anomalies in data that might not be immediately apparent through standard query results. Here's our plan of action to visually dissect and present the data:
+#### Setting Up the Environment and Dependencies
+```python
+%config InlineBackend.figure_format = 'svg'
+
+# Dependencies
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sqlalchemy import create_engine, text
+from config import username, password
+```
+This code block is the initial setup for our data analysis in the Jupyter Notebook. It includes several key components:
+
+* `%config InlineBackend.figure_format = 'svg'`: This line configures the Jupyter Notebook to display Matplotlib figures in the SVG format, which provides higher-quality visuals.
+* Import statements for required libraries:
+	* `pandas`: A fundamental package for data manipulation and analysis.
+	* `seaborn` and `matplotlib.pyplot`: Libraries used for data visualization.
+	* `sqlalchemy`: A SQL toolkit and Object-Relational Mapping (ORM) library for Python, used here to manage database connections.
+	* `text`: A function from SQLAlchemy, used for writing SQL queries.
+* Importing database credentials from `config.py`: The `username` and `password` are imported from a configuration file, adhering to best practices for sensitive data management.
+
+This setup ensures we have all the necessary tools and configurations in place to proceed with connecting to our database and visualizing the data.
