@@ -366,5 +366,13 @@ This bar chart is an effective way to compare average salaries across different 
 In the Insights section of this README, we delve into the findings and interpretations derived from our comprehensive data analysis. Here, we not only showcase previews of the results obtained from our SQL queries but also provide thoughtful summaries and key insights gleaned from the data. This section serves as a bridge between raw data and actionable knowledge, highlighting notable trends, anomalies, and patterns that emerged during our exploration.
 
 Accompanying our summaries are two distinct chart visualizations – a histogram of employee salary ranges and a bar chart depicting average salaries by title. These visual representations aid in contextualizing the data, making complex information more accessible and understandable. Through this analytical lens, we aim to unveil the deeper narratives hidden within the dataset and offer a clearer understanding of the underlying dynamics at play.
-#### Employee Details and Salaries
-![image](images/query1.png)
+#### Summary of Employee Details and Salaries Query
+![image](images/query1.png
+
+The executed SQL query provides a comprehensive view of each employee's personal and salary details within the organization. It presents a table listing the employee number, last name, first name, sex, and corresponding salary for all employees. With a total count of 300,024 employees, the data offers an extensive overview of the workforce demographics and salary distribution.
+Key Aspects of the Query Results:
+1. **Employee Identification**: Each row uniquely identifies an employee through their employee number, facilitating easy referencing and data management.
+2. **Personal Details**: The inclusion of last names, first names, and sex of the employees assists in understanding the demographic composition of the workforce. This information is crucial for HR-related analytics, such as diversity assessments and personnel management.
+3. **Salary Insights**: By associating each employee with their salary, the query provides vital data for financial analysis, payroll management, and budgeting.
+
+
