@@ -293,3 +293,27 @@ This section of the code is dedicated to fetching salary data from the database:
 * `salary_df = pd.read_sql(salary_query, connection)`: Here, the query is executed using Pandas' `read_sql` function, which takes the SQL query and the database connection as arguments. The result of the query is stored in a Pandas DataFrame called `salary_df`. This DataFrame will be used for further analysis and visualization, as it now contains all the salary data from the database.
 
 This step is pivotal in transitioning from data retrieval to analysis, as it provides the necessary data in a format that can be easily manipulated and visualized using Python's data analysis tools.
+#### Visualizing Salary Distribution with a Histogram
+```python
+# Set the aesthetic style of the plots
+sns.set_style("whitegrid")
+
+# Plotting the histogram using Seaborn
+plt.figure(figsize=(10, 6))
+sns.histplot(salary_df['salary'], bins=20, color='blue', alpha=0.7, kde=False)
+
+plt.title('Distribution of Employee Salaries')
+plt.xlabel('Salary')
+plt.ylabel('Number of Employees')
+
+# Show the plot
+plt.show()
+```
+This code block creates a histogram to visualize the distribution of employee salaries:
+* `sns.set_style("whitegrid")`: Sets the aesthetic style of the plots to 'whitegrid', which is a theme in Seaborn that provides a white background with gridlines for better readability.
+* `plt.figure(figsize=(10, 6))`: Initializes a new figure for plotting with a specified size (10 inches wide and 6 inches tall), ensuring that the histogram has adequate space to be displayed clearly.
+* `sns.histplot(...)`: This function from Seaborn is used to create the histogram. It takes the salary data from the `salary_df` DataFrame and organizes it into 20 bins (as specified by the `bins=20` argument), providing a detailed view of the salary distribution. The color and transparency of the bars are set with `color='blue'` and `alpha=0.7`.
+* `plt.title`, `plt.xlabel`, and `plt.ylabel`: These lines add a title to the histogram and label the x-axis and y-axis with 'Salary' and 'Number of Employees', respectively, making the plot informative and easy to understand.
+* `plt.show()`: Finally, this command displays the histogram plot within the Jupyter Notebook.
+
+This histogram is a key visualization in our analysis, as it gives us a clear picture of how employee salaries are distributed, which can be crucial for understanding the overall salary structure in the dataset.
