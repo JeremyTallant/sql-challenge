@@ -232,3 +232,12 @@ JOIN departments d ON de.dept_no = d.dept_no
 WHERE d.dept_name IN ('Sales', 'Development');
 ```
 This query targets employees in both the Sales and Development departments. It joins the `employees` table with `dept_emp` and `departments` tables to connect each employee to their respective department. The `WHERE` clause utilizes the `IN` operator to specifically filter for the Sales and Development departments, listing each relevant employee's number, last name, first name, and department name.
+#### Frequency Count of Employee Last Names
+```sql
+-- 8. List the frequency count of employee last names (i.e., how many employees share each last name) in descending order.
+SELECT last_name, COUNT(*) AS frequency
+FROM employees
+GROUP BY last_name
+ORDER BY frequency DESC;
+```
+This query calculates the frequency of each last name among employees. It groups the records in the `employees` table by `last_name` and uses the `COUNT(*)` function to count the number of occurrences of each last name. The results are then ordered in descending order (`DESC`) based on this frequency count, showing the most common last names at the top.
