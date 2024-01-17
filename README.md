@@ -317,3 +317,22 @@ This code block creates a histogram to visualize the distribution of employee sa
 * `plt.show()`: Finally, this command displays the histogram plot within the Jupyter Notebook.
 
 This histogram is a key visualization in our analysis, as it gives us a clear picture of how employee salaries are distributed, which can be crucial for understanding the overall salary structure in the dataset.
+#### Calculating Average Salary by Title
+```python
+# SQL query to select average salary by title
+avg_salary_query = text("""
+SELECT t.title, AVG(s.salary) as average_salary
+FROM titles t
+JOIN employees e ON t.title_id = e.emp_title_id
+JOIN salaries s ON e.emp_no = s.emp_no
+GROUP BY t.title
+""")
+
+# Execute the query and store the result in a DataFrame
+avg_salary_df = pd.read_sql(avg_salary_query, connection)
+```
+This section of the code performs a crucial analysis task: calculating the average salary for each job title:
+* `avg_salary_query = text(...)`: Defines an SQL query that calculates the average salary (`AVG(s.salary)`) for each title (`t.title`). The query joins three tables: `titles`, `employees`, and `salaries`. The `JOIN` operations are based on the relations between the titles and employees (via `title_id` and `emp_title_id`) and between employees and their salaries (via `emp_no`). The `GROUP BY t.title` clause ensures that the average salary is calculated separately for each distinct title in the `titles` table.
+* `pd.read_sql(avg_salary_query, connection)`: Executes the query using Pandas' `read_sql` function with the established database connection. The result of the query, which is a DataFrame containing each title and its corresponding average salary, is stored in `avg_salary_df`.
+
+This DataFrame, `avg_salary_df`, is now ready to be used for further visualization or analysis, such as creating a bar chart to compare the average salaries across different job titles in the organization.
