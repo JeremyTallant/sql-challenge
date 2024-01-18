@@ -428,3 +428,12 @@ Key Aspects of the Query Results:
 1. **Focused Departmental Selection**: The query uses the `WHERE` clause with the `IN` operator to specifically target employees in the 'Sales' and 'Development' departments. This dual department focus offers insights into two pivotal areas of the organization.
 2. **Detailed Employee Information**: By including comprehensive details for each employee, the query facilitates easy identification and referencing, which is essential for internal operations and communications.
 3. **Large Combined Department Size**: The total of 137,952 rows signifies the significant number of employees in both departments, reflecting their importance in the overall structure of the organization.
+### Summary of Query for Frequency Count of Employee Last Names
+![image](images/query8.png)
+
+This SQL query provides a frequency count of employee last names in the organization, showcasing how many employees share each last name. It organizes the data in descending order of frequency. The query results in a total of 1,638 distinct last names, highlighting the diversity of the workforce in terms of surname representation.
+
+Key Aspects of the Query Results:
+1. **Last Name Frequency Analysis**: The query counts the occurrences of each last name within the employees table using the COUNT(*) function, grouped by last_name. This offers a clear view of the most to least common surnames among employees.
+2. **Descending Order Sorting**: By ordering the results in descending frequency, the query immediately brings the most common last names to the forefront, providing an easy way to identify which surnames are most prevalent in the organization.
+3. **Diversity Insight**: The total of 1,638 rows indicates a broad variety of last names, which can be indicative of a diverse workforce.
