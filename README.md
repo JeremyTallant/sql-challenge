@@ -434,6 +434,6 @@ Key Aspects of the Query Results:
 This SQL query provides a frequency count of employee last names in the organization, showcasing how many employees share each last name. It organizes the data in descending order of frequency. The query results in a total of 1,638 distinct last names, highlighting the diversity of the workforce in terms of surname representation.
 
 Key Aspects of the Query Results:
-1. **Last Name Frequency Analysis**: The query counts the occurrences of each last name within the employees table using the COUNT(*) function, grouped by last_name. This offers a clear view of the most to least common surnames among employees.
+1. **Last Name Frequency Analysis**: The query counts the occurrences of each last name within the employees table using the `COUNT(*)` function, grouped by `last_name`. This offers a clear view of the most to least common surnames among employees.
 2. **Descending Order Sorting**: By ordering the results in descending frequency, the query immediately brings the most common last names to the forefront, providing an easy way to identify which surnames are most prevalent in the organization.
 3. **Diversity Insight**: The total of 1,638 rows indicates a broad variety of last names, which can be indicative of a diverse workforce.
