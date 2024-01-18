@@ -421,3 +421,10 @@ Key Aspects of the Query Results:
 1. **Department-Specific Listing**: The query filters the employees database to only include those who are part of the Sales department.
 2. **Comprehensive Employee Details**: The query provides a detailed listing of employees in the Sales department, including their unique employee numbers, names, and the department they belong to.
 3. **Large Department Size**: The return of 52,245 rows indicates a considerable number of employees in the Sales department, suggesting it's a major area within the organization.
+### Summary of Query for Employees in Sales and Development Departments
+![image](images/query7.png)
+
+Key Aspects of the Query Results:
+1. **Focused Departmental Selection**: The query uses the `WHERE` clause with the `IN` operator to specifically target employees in the 'Sales' and 'Development' departments. This dual department focus offers insights into two pivotal areas of the organization.
+2. **Detailed Employee Information**: By including comprehensive details for each employee, the query facilitates easy identification and referencing, which is essential for internal operations and communications.
+3. **Large Combined Department Size**: The total of 137,952 rows signifies the significant number of employees in both departments, reflecting their importance in the overall structure of the organization.
