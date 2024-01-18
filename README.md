@@ -439,3 +439,11 @@ Key Aspects of the Query Results:
 1. **Last Name Frequency Analysis**: The query counts the occurrences of each last name within the employees table using the `COUNT(*)` function, grouped by `last_name`. This offers a clear view of the most to least common surnames among employees.
 2. **Descending Order Sorting**: By ordering the results in descending frequency, the query immediately brings the most common last names to the forefront, providing an easy way to identify which surnames are most prevalent in the organization.
 3. **Diversity Insight**: The total of 1,638 rows indicates a broad variety of last names, which can be indicative of a diverse workforce.
+### Salary Distribution Within the Organization 
+![image](images/histogram.svg)
+
+The histogram depicting employee salary distribution indicates a skewed pattern, with a substantial majority of employees earning salaries at the lower end of the spectrum, as evidenced by the tall bar on the far left. This suggests that entry-level or junior positions dominate the workforce. As the salary increases, the number of employees diminishes, which is typical in organizational structures but may also point to potential disparities in pay scales. The absence of high-salary outliers could imply a standardized cap on wages or a relatively equitable pay structure across the organization. These findings could be instrumental for the HR department in evaluating compensation strategies and addressing equitable pay practices.
+### Average Salary by Title
+![image](images/barplot.svg)
+
+The bar plot illustrates the average salaries for various job titles, highlighting a relatively uniform distribution of compensation across different roles. The bars, representing titles from 'Assistant Engineer' to 'Technique Leader', suggest minimal variation in average pay, with 'Senior Staff' and 'Staff' roles slightly higher on the scale. This uniformity could indicate a structured and equitable pay strategy within the organization. However, the closeness in compensation between junior and senior positions may also suggest a need to review the differentiation in pay relative to job responsibilities and hierarchy. The data provides a compelling visual argument for potential salary restructuring to maintain motivation and reward experience and expertise adequately.
