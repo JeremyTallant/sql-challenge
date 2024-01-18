@@ -424,6 +424,8 @@ Key Aspects of the Query Results:
 ### Summary of Query for Employees in Sales and Development Departments
 ![image](images/query7.png)
 
+This SQL query effectively identifies and lists all employees who are part of either the Sales or the Development departments. It provides crucial details like employee number, last name, first name, and department name. The query has yielded a substantial total of 137,952 rows, indicating the combined size of these two key departments within the organization.
+
 Key Aspects of the Query Results:
 1. **Focused Departmental Selection**: The query uses the `WHERE` clause with the `IN` operator to specifically target employees in the 'Sales' and 'Development' departments. This dual department focus offers insights into two pivotal areas of the organization.
 2. **Detailed Employee Information**: By including comprehensive details for each employee, the query facilitates easy identification and referencing, which is essential for internal operations and communications.
