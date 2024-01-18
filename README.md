@@ -411,3 +411,13 @@ Key Aspects of the Query Results:
 1. **Unique Name Combination**: The query focuses on a rare and specific name combination, filtering for first names exactly matching 'Hercules' and last names starting with 'B'.
 2. **Data Scope**: It retrieves the first name, last name, and sex of the employees, providing essential details about these individuals.
 3. **Narrowed Down Results**: The return of 20 rows from what is presumably a much larger database highlights the effectiveness of SQL in pinpointing a small, distinct group within a vast employee dataset.
+### Summary of Query for Employees in the Sales Department
+![image](images/query6.png)
+
+This SQL query is designed to list all employees working in the Sales department, showing their employee number, last name, first name, and the department name. The query has returned a total of 52,245 rows, indicating that there are 52,245 employees in the Sales department.
+
+Key Aspects of the Query Results:
+
+1. **Department-Specific Listing**: The query filters the employees database to only include those who are part of the Sales department.
+2. **Comprehensive Employee Details**: The query provides a detailed listing of employees in the Sales department, including their unique employee numbers, names, and the department they belong to.
+3. **Large Department Size**: The return of 52,245 rows indicates a considerable number of employees in the Sales department, suggesting it's a major area within the organization.
